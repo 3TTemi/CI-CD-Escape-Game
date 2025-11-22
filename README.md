@@ -12,6 +12,8 @@ Your job is to perform a **rollback**.
    - restoring the last working version of `api/server.js`
 3. Push your rollback fix
 
+(Keep rolling back until it works, some commit messages may be decieving)
+
 When CI runs and turns **🟢 GREEN**, you escape the final level.
 
 ## Hints
