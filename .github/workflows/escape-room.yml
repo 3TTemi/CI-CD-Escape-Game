@@ -1,8 +1,9 @@
+name: Escape Room Pipeline
+
 jobs:
   build_test:
     runs-on ubuntu-latest
     steps:
-     - uses: actions/checkout@v3
-     - name Install deps
-       run npm install
+     - uses actions/checkout@v3
+     - run npm install
      - run npm test
