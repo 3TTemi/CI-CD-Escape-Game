@@ -10,4 +10,8 @@ jobs:
       - name: Run tests
         run: npm test
       - name: Build (fake)
-        run: echo "Build successful!" 
+        run: echo "Build successful!"
+      - name: Start API
+        run: node api/server.js &
+      - name: Wait for API to start
+        run: sleep 2
