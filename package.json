@@ -1,0 +1,14 @@
+{
+  "name": "devops-escape-room",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest",
+    "start": "node api/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
