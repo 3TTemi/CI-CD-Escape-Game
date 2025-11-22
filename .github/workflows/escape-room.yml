@@ -4,12 +4,17 @@ jobs:
   build_test:
     runs-on: ubuntu-latest
     steps:
-      - name: Install Vercel CLI
-        run: npm install -g vercel
       - uses: actions/checkout@v3
       - name: Install deps
         run: npm install
       - name: Run tests
         run: npm test
+      - name: Install Vercel CLI
+        run: npm install -g vercel
       - name: Deploy Preview
-        run: vercel --prod --token=$VERCEL_TOKEN
+        run: |
+          if [ -z "${{ secrets.VERCEL_TOKEN }}" ]; then
+            echo "Error: VERCEL_TOKEN secret is not set"
+            exit 1
+          fi
+          echo ":white_check_mark: VERCEL_TOKEN is configured!"
