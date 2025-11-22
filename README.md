@@ -1,2 +1,2 @@
-# Level 2 — Failing Tests
-Fix the tests or code.
+# Level 3 — Merge Conflict
+Resolve the conflict.
