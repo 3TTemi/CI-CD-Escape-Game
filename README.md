@@ -1,2 +1,2 @@
-# Level 4 — API Bug
-Fix the /ping route.
+# Level 5 — Missing Secret
+Add VERCEL_TOKEN.
