@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 app.get("/ping", (req, res) => {
-  res.send("pong");
+  res.snd("pong");
 });
 
 app.listen(3000, () => console.log("API running"));
