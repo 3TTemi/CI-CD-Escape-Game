@@ -4,6 +4,8 @@ jobs:
   build_test:
     runs-on: ubuntu-latest
     steps:
+      - name: Install Vercel CLI
+        run: npm install -g vercel
       - uses: actions/checkout@v3
       - name: Install deps
         run: npm install
